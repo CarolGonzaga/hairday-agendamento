@@ -1,18 +1,23 @@
 .schedule {
   grid-area: schedule;
   padding: 5rem 7.75rem;
+  padding-bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.schedule > header {
+.wrapper>header {
   margin-bottom: 2rem;
 }
 
-.schedule > header h1 {
+.wrapper>header h1 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.schedule > header p {
+.wrapper>header p {
   color: #98959d;
   font-size: 0.87rem;
 }
@@ -87,7 +92,8 @@
     padding: 1.5rem;
   }
 
-  .schedule > header {
+  .wrapper>header {
     flex-direction: column;
+    text-align: center;
   }
 }

@@ -12,9 +12,8 @@ const selectedDate = document.getElementById("date");
 // Gera a data de hoje em formato compatível com input type="date"
 const inputToday = dayjs(new Date()).format("YYYY-MM-DD");
 
-// Define data de hoje como valor inicial e mínimo
+// Define data atual como valor inicial
 selectedDate.value = inputToday;
-selectedDate.min = inputToday;
 
 // Evento de envio do formulário de agendamento
 form.onsubmit = async (event) => {

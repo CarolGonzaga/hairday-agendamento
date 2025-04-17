@@ -36,6 +36,7 @@
             </div>
 
             <span class="label">Horários</span>
+
             <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
                 <!-- Exemplo: Manhã
                 <li data-period="morning" class="hour-period">Manhã</li>
@@ -60,70 +61,84 @@
             </ul>
 
             <label for="client" class="label">Cliente</label>
-            <div class="input">
-                <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
-                <input type="text" id="client" name="client" placeholder="Nome do cliente" required />
-            </div>
+            <div class="client-row">
+                <div class="input">
+                    <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
+                    <input type="text" id="client" name="client" placeholder="Nome do cliente" required />
+                </div>
 
-            <button type="submit" class="button">Agendar</button>
+                <button type="submit" class="button">Agendar</button>
+            </div>
         </form>
 
         <aside class="schedule">
-            <header>
-                <h1>Agendamentos</h1>
-                <p>Visualize os agendamentos de acordo com o dia selecionado</p>
-            </header>
-
-            <section class="schedule-period">
+            <div class="wrapper">
                 <header>
-                    <img src="./src/assets/morning.svg" alt="Manhã" />
-                    <strong>Manhã</strong>
-                    <span>09h-12h</span>
+                    <h1>Agendamentos</h1>
+                    <p>Visualize os agendamentos de acordo com o dia selecionado</p>
                 </header>
-                <ul id="period-morning" class="period">
-                    <!-- Exemplo
-                    <li>
-                        <strong>11:00</strong>
-                        <span>Carol Gonzaga</span>
-                        <img src="./src/assets/cancel.svg" alt="Cancelar" class="cancel-icon" />
-                    </li>
-                    -->
-                </ul>
-            </section>
+                <section class="schedule-period">
+                    <header>
+                        <img src="./src/assets/morning.svg" alt="Manhã" />
+                        <strong>Manhã</strong>
+                        <span>09h-12h</span>
+                    </header>
+                    <ul id="period-morning" class="period">
+                        <!-- Exemplo
+                        <li>
+                            <strong>11:00</strong>
+                            <span>Carol Gonzaga</span>
+                            <img src="./src/assets/cancel.svg" alt="Cancelar" class="cancel-icon" />
+                        </li>
+                        -->
+                    </ul>
+                </section>
+                <section class="schedule-period">
+                    <header>
+                        <img src="./src/assets/afternoon.svg" alt="Tarde" />
+                        <strong>Tarde</strong>
+                        <span>13h-18h</span>
+                    </header>
+                    <ul id="period-afternoon" class="period">
+                        <!-- Exemplo
+                        <li>
+                            <strong>14:00</strong>
+                            <span>Victor Gonzaga</span>
+                            <img src="./src/assets/cancel.svg" alt="Cancelar" class="cancel-icon" />
+                        </li>
+                        -->
+                    </ul>
+                </section>
+                <section class="schedule-period">
+                    <header>
+                        <img src="./src/assets/night.svg" alt="noite" />
+                        <strong>Noite</strong>
+                        <span>19h-21h</span>
+                    </header>
+                    <ul id="period-night" class="period">
+                        <!-- Exemplo
+                        <li>
+                            <strong>19:00</strong>
+                            <span>Rafael Gonzaga</span>
+                            <img src="./src/assets/cancel.svg" alt="Cancelar" class="cancel-icon" />
+                        </li>
+                         -->
+                    </ul>
+                </section>
+            </div>
 
-            <section class="schedule-period">
-                <header>
-                    <img src="./src/assets/afternoon.svg" alt="Tarde" />
-                    <strong>Tarde</strong>
-                    <span>13h-18h</span>
-                </header>
-                <ul id="period-afternoon" class="period">
-                    <!-- Exemplo
-                    <li>
-                        <strong>14:00</strong>
-                        <span>Victor Gonzaga</span>
-                        <img src="./src/assets/cancel.svg" alt="Cancelar" class="cancel-icon" />
-                    </li>
-                    -->
-                </ul>
-            </section>
-
-            <section class="schedule-period">
-                <header>
-                    <img src="./src/assets/night.svg" alt="noite" />
-                    <strong>Noite</strong>
-                    <span>19h-21h</span>
-                </header>
-                <ul id="period-night" class="period">
-                    <!-- Exemplo
-                    <li>
-                        <strong>19:00</strong>
-                        <span>Rafael Gonzaga</span>
-                        <img src="./src/assets/cancel.svg" alt="Cancelar" class="cancel-icon" />
-                    </li>
-                     -->
-                </ul>
-            </section>
+            <footer>
+                <p>
+                    Desenvolvido por
+                    <strong>
+                        <a href="https://linktr.ee/anacquesta" target="_blank">Carol Gonzaga</a>
+                    </strong>
+                    em parceria com
+                    <strong>
+                        <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>
+                    </strong>
+                </p>
+            </footer>
         </aside>
     </div>
 </body>
