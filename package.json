@@ -4,12 +4,10 @@
     "author": "Carol Gonzaga",
     "scripts": {
         "build": "webpack",
-        "dev": "webpack serve",
-        "server": "json-server --watch server.json --port 3333"
+        "dev": "webpack serve"
     },
     "dependencies": {
-        "dayjs": "^1.11.10",
-        "json-server": "^1.0.0-alpha.21"
+        "dayjs": "^1.11.10"
     },
     "devDependencies": {
         "@babel/core": "^7.23.7",
